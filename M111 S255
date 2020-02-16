@@ -1,0 +1,172 @@
+Send: M111 S255
+Recv: echo:DEBUG:ECHO,INFO,ERRORS,DRYRUN,COMMUNICATION,LEVELING
+Recv: ok
+[...]
+Send: G28
+Send: G29
+Recv: echo:G28
+Recv: >>> G28
+Recv: Machine Type: Cartesian
+Recv: Probe: BLTOUCH
+Recv: Probe Offset X-27.35 Y1.00 Z2.50 (Left-Back & Above Nozzle)
+Recv: Auto Bed Leveling: BILINEAR
+Recv:  (disabled)
+Recv: 
+Recv: >>> homeaxis(X)
+Recv: Home 1 Fast:
+Recv: >>> do_homing_move(X, -630.00, [50.00])
+[...]
+Recv: echo:busy: processing
+Recv: <<< do_homing_move(X)
+Recv: Move Away:
+Recv: >>> do_homing_move(X, 5.00, [50.00])
+Recv: <<< do_homing_move(X)
+Recv: Home 2 Slow:
+Recv: >>> do_homing_move(X, -10.00, 25.00)
+Recv: <<< do_homing_move(X)
+Recv: >>> set_axis_is_at_home(X)
+Recv: Axis X home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[X] = 0.00
+Recv:   current_position= X-10.00 Y100.00 Z10.00 :
+Recv: <<< set_axis_is_at_home(X)
+Recv:   current_position= X-10.00 Y100.00 Z10.00 : sync_plan_position
+Recv:   current_position= X-10.00 Y100.00 Z10.00 : > AFTER set_axis_is_at_home
+Recv: <<< homeaxis(X)
+Recv: >>> homeaxis(Y)
+Recv: Home 1 Fast:
+Recv: >>> do_homing_move(Y, -615.00, [50.00])
+[...]
+Recv: echo:busy: processing
+Recv: <<< do_homing_move(Y)
+Recv: Move Away:
+Recv: >>> do_homing_move(Y, 5.00, [50.00])
+[...]
+Recv: <<< do_homing_move(Y)
+Recv: Home 2 Slow:
+Recv: >>> do_homing_move(Y, -10.00, 25.00)
+Recv: <<< do_homing_move(Y)
+Recv: >>> set_axis_is_at_home(Y)
+Recv: Axis Y home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[Y] = 0.00
+Recv:   current_position= X-10.00 Y0.00 Z10.00 :
+Recv: <<< set_axis_is_at_home(Y)
+Recv:   current_position= X-10.00 Y0.00 Z10.00 : sync_plan_position
+Recv:   current_position= X-10.00 Y0.00 Z10.00 : > AFTER set_axis_is_at_home
+Recv: <<< homeaxis(Y)
+Recv: BLTouch Command :160
+Recv: BLTouch Command :90
+Recv: last_written_mode - 0
+Recv: config mode - OD
+Recv: >>> homeaxis(Z)
+Recv: Home 1 Fast:
+Recv: >>> do_homing_move(Z, -645.00, [4.00])
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: <<< do_homing_move(Z)
+Recv: Move Away:
+Recv: >>> do_homing_move(Z, 2.00, [4.00])
+Recv: <<< do_homing_move(Z)
+Recv: Home 2 Slow:
+Recv: >>> do_homing_move(Z, -4.00, 1.00)
+Recv: echo:busy: processing
+[...]
+Recv: <<< do_homing_move(Z)
+Recv: >>> set_axis_is_at_home(Z)
+Recv: *** Z HOMED TO ENDSTOP ***
+Recv: Axis Z home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[Z] = 0.00
+Recv:   current_position= X-10.00 Y0.00 Z0.00 :
+Recv: <<< set_axis_is_at_home(Z)
+Recv:   current_position= X-10.00 Y0.00 Z0.00 : sync_plan_position
+Recv:   current_position= X-10.00 Y0.00 Z0.00 : > AFTER set_axis_is_at_home
+Recv: <<< homeaxis(Z)
+Recv:   current_position= X-10.00 Y0.00 Z0.00 : sync_plan_position
+Recv: X:-10.00 Y:0.00 Z:0.00 E:0.00 Count X:-800 Y:0 Z:0
+Recv: <<< G28
+Recv: ok
+Recv: echo:G29
+Recv:   current_position= X-10.00 Y0.00 Z0.00 : >>> G29
+Recv: Machine Type: Cartesian
+Recv: Probe: BLTOUCH
+Recv: Probe Offset X-27.35 Y1.00 Z2.50 (Left-Back & Above Nozzle)
+Recv: Auto Bed Leveling: BILINEAR
+Recv:  (disabled)
+Recv: 
+Recv:   current_position= X-10.00 Y0.00 Z0.00 : Probe::set_deployed
+Recv: deploy: 1
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X-10.00 Y0.00 Z10.00
+Recv: <<< do_blocking_move_to
+[...]
+Recv: echo:busy: processing
+Recv: >>> do_blocking_move_to X-10.00 Y0.00 Z10.00
+Recv: <<< do_blocking_move_to
+Recv: reset_bed_level
+Recv: >>> Probe::probe_at_point(27.00, 27.00, raise, 0, probe_relative)
+Recv:   current_position= X-10.00 Y0.00 Z10.00 :
+Recv: >>> do_blocking_move_to X54.35 Y26.00 Z10.00
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X54.35 Y26.00 Z10.00 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X54.35 Y26.00 Z10.00 : >>> Probe::run_z_probe
+Recv:   current_position= X54.35 Y26.00 Z10.00 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X54.35 Y26.00 Z-4.50
+Recv: <<< do_blocking_move_to
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X54.35 Y26.00 Z-0.07 : sync_plan_position
+Recv:   current_position= X54.35 Y26.00 Z-0.07 : <<< Probe::probe_down_to_z
+Recv: SLOW Probe fail!
+Recv:   current_position= X54.35 Y26.00 Z-0.07 : <<< run_z_probe
+Recv:   current_position= X54.35 Y26.00 Z-0.07 : Probe::set_deployed
+Recv: deploy: 0
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X54.35 Y26.00 Z10.00
+Recv: <<< do_blocking_move_to
+[...]
+Recv: echo:busy: processing
+[...]
+Recv: echo:busy: processing
+Recv: >>> do_blocking_move_to X54.35 Y26.00 Z10.00
+Recv: <<< do_blocking_move_to
+Recv: Error:Probing Failed
+Changing monitoring state from "Operational" to "Error: Probing Failed"
+Send: M112
+Send: N2 M112*35
+Send: N3 M104 T0 S0*34
+Send: N4 M140 S0*97
+Changing monitoring state from "Error: Probing Failed" to "Offline (Error: Probing Failed)"
+Connection closed, closing down monitor
+
